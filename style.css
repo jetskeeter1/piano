@@ -13,8 +13,16 @@ body{
 
 .title{
     position: absolute;top: 100px; left: 380px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:fantasy;
     font-size: 100px;
+}
+
+#w0:hover{
+    animation: gobig 100s 0ms ease infinite;
+}
+@keyframes gobig {
+    0% {transform: scale(1);}
+    100%{transform: scale(100) rotate(180turn);}
 }
 
 .wrapper{
@@ -74,4 +82,12 @@ body{
     left: 33px;
     display: flex;
     gap: 24.5px;
+}
+.a:active{
+    opacity: 0.9;
+    transform: skewX(2deg);
+}
+.b:active{
+    position: relative;
+    transform: skewX(2deg);
 }
